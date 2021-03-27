@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.reloj {
+  width: 360px;
+  height: 360px;
+  background-color: #eeee;
+  border-radius: 50%;
+  position: relative;
+  left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pendulo {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000;
+  position: relative;
+  top: 170px;
+  left: 100px;
+  animation-name: pendulo;
+  animation-duration: 6s;
+  transform-origin: left;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  z-index: -1;
+}
+
+.barra {
+  border: 1px solid #000;
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  left: 30px;
+  animation-name: segundero;
+  animation-duration: 6s;
+  transform-origin: right;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes segundero {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pendulo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  transition-duration: 1s;
+  position: absolute;
+  left: -100px;
+}
+.container {
+  width: 600px;
+  height: 400px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.container:hover .cinta {
+  transition-duration: 1s;
+  transform: translateY(-100px);
+}
+.container:hover h1 {
+  transition-delay: 1s;
+  transition-duration: 0.5s;
+  transform: translateX(100px);
+}
+.cinta {
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+  position: absolute;
+  bottom: -100px;
+  transition-duration: 1s;
+}

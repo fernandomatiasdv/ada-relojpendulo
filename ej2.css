@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  opacity: 0;
+  transition-duration: 0.6s;
+}
+.card {
+  width: 600px;
+  position: relative;
+  height: 400px;
+  background-image: url("./assets/photo-1610983339319-b914eafbe998.jpg");
+}
+.card-filter {
+  width: 600px;
+  height: 400px;
+  background-color: brown;
+  opacity: 0;
+  transition-duration: 0.6s;
+}
+.card:hover .card-filter {
+  opacity: 0.4;
+  transition-duration: 0.6s;
+}
+.card:hover h1 {
+  transition-duration: 0.6s;
+  opacity: 1;
+}
